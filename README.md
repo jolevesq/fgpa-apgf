@@ -2,11 +2,10 @@
 
 [![Join the chat at https://gitter.im/fgpv-vpgf/fgpa-apgf](https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=flat-square)](https://gitter.im/fgpv-vpgf/AuthoringTool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Code Climate](https://codeclimate.com/github/fgpv-vpgf/fgpa-apgf/badges/gpa.svg)](https://codeclimate.com/github/fgpv-vpgf/fgpa-apgf)
+[![Code Climate](https://codeclimate.com/github/fgpv-vpgf/fgpa-apgf/badges/gpa.svg)](https://codeclimate.com/github/fgpv-vpgf/fgpa-apgf)<br />
 [![Issue Count](https://codeclimate.com/github/fgpv-vpgf/fgpa-apgf/badges/issue_count.svg)](https://codeclimate.com/github/fgpv-vpgf/fgpa-apgf)
 
--------------------------------------------------------------------
-# Authoring tool for Federal Geospatial Platform (FGP) viewer
+Federal Geospatial Platform Authoring / Auteur pour la Plateforme géospatiale fédérale
 
 ## Getting Started
 
