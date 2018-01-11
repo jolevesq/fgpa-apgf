@@ -421,15 +421,48 @@ function Controller($scope, $translate, $timeout,
                 ] },
                 { 'title': $translate.instant('form.map.legend'), 'items': [
                     { 'key': 'legend', 'items': [
-                        {   'key': 'legend.legendChoice',
+                        {  'key': 'legend.legendChoice',
                             'type': 'select',
                             'titleMap': [
-                                { 'value': "autopopulate", 'name': $translate.instant('form.map.legendauto') },
-                                { 'value': "structured", 'name': $translate.instant('form.map.legendstruct') }
+                                { 'value': 'autopopulate', 'name': $translate.instant('form.map.legendauto') },
+                                { 'value': 'structured', 'name': $translate.instant('form.map.legendstruct') }
                             ],
                             'copyValueTo': ['legend.type']
                         },
-                        {   'key': 'legend.type', 'readonly': true }
+                        { 'key': 'legend.type', 'readonly': true },
+                        { 'key': 'legend.root', 'condition': 'model.legend.type === \'structured\'', 'items': [
+                            { 'key': 'legend.root.name' },
+                            { 'key': 'legend.root.expanded' },
+                            { 'key': 'legend.root.children', 'htmlClass': 'av-accordion-all', 'startEmpty': true, 'onChange': () => { events.$broadcast(events.avNewItems) }, 'add': $translate.instant('button.add'), 'items': [
+                                { 'type': 'fieldset', 'htmlClass': 'av-accordion-toggle av-layers', 'title': $translate.instant('form.map.layer'), 'items': [
+                                    { 'key': 'legend.root.children[]', 'htmlClass': 'av-accordion-content', 'notitle': true, 'items': [
+                                        { 'key': 'legend.root.children[].childrenChoice' },
+                                        { 'type': 'section', 'condition': 'model.legend.root.children[arrayIndex].childrenChoice === \'entry\'', 'items': [
+                                            { 'key': 'legend.root.children[].layerId' },
+                                            { 'key': 'legend.root.children[].hidden' },
+                                            { 'key': 'legend.root.children[].controlledIds' },
+                                            { 'key': 'legend.root.children[].entryIndex' },
+                                            { 'key': 'legend.root.children[].entryId' },
+                                            { 'key': 'legend.root.children[].coverIcon' },
+                                            { 'key': 'legend.root.children[].description' },
+                                            { 'key': 'legend.root.children[].symbologyStack' },
+                                            { 'key': 'legend.root.children[].symbologyRenderStyle' }
+                                        ] },
+                                        { 'type': 'section', 'condition': 'model.legend.root.children[arrayIndex].childrenChoice === \'infoSection\'', 'items': [
+                                            { 'key': 'legend.root.children[].infoChoice', 'type': 'select', 'link': 'legend.root.children[$index].infoType', 'model': 'legend.root.children.infoChoice', 'onChange': copyValueToModelIndex },
+                                            { 'key': 'legend.root.children[].infoType', 'readonly': true },
+                                            { 'key': 'legend.root.children[].content' },
+                                            { 'key': 'legend.root.children[].layerName', 'condition': 'model.legend.root.children[arrayIndex].infoChoice === \'unboundLayer\'' },
+                                            { 'key': 'legend.root.children[].description', 'condition': 'model.legend.root.children[arrayIndex].infoChoice === \'unboundLayer\'' },
+                                            { 'key': 'legend.root.children[].symbologyStack', 'condition': 'model.legend.root.children[arrayIndex].infoChoice === \'unboundLayer\'' },
+                                            { 'key': 'legend.root.children[].symbologyRenderStyle', 'condition': 'model.legend.root.children[arrayIndex].infoChoice === \'unboundLayer\'' }
+                                        ] }
+                                    ] }
+                                ] }
+                            ] },
+                            { 'key': 'legend.root.controls' },
+                            { 'key': 'legend.root.disabledControls' }
+                        ] }
                     ]}
                 ] }
             ] }

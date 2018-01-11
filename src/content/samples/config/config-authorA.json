@@ -535,7 +535,10 @@
           "title": "my custom table"
       }
     }
-    ]
+    ],
+    "legend": {
+        "type": "autopopulate"
+    }
     },
     "services": {
         "proxyUrl": "http://167.40.64.74/wmsproxy/ws/wmsproxy/executeFromProxy",
