@@ -9,11 +9,18 @@ const translations = {
         fmePassPH: 'Enter Password...',
         fmeLogin: 'Login',
         fmeErrorConn: 'Connection error: bad user name and/or password',
+        register: 'If you do not have a DDR account, contact support at ',
+        upload: 'Upload',
+        delete: 'Delete',
+        publish: 'Publish',
         uploaded: 'Selected file: ',
-        run: 'Start Upload',
+        runupload: 'Start Upload',
+        update: 'Update existing package',
         size: 'bytes',
         chooseFile: 'Choose a zip file',
         userEmail: 'User Email: ',
+        deletelist: 'Select folders to delete ',
+        publishlist: 'Select folder to publish ',
         messType: 'Message Type: ',
         messSev: 'Message Severity: ',
         messTypeAll: 'All',
@@ -42,11 +49,18 @@ const translations = {
         fmePassPH: 'Entrer un mot de passe...',
         fmeLogin: 'Identification',
         fmeErrorConn: 'Erreur de connexion : mauvais nom d\'utilisateur et/ou mot de passe',
+        register: 'Si vous ne possédez pas de compte DDR, contactez le support technique à ',
+        upload: 'Téléverser',
+        delete: 'Supprimer',
+        publish: 'Publier',
         uploaded: 'Fichier sélectionné : ',
-        run: 'Débuter le  Téléversement',
+        runupload: 'Débuter le Téléversement',
+        update: 'Mettre à jour un paquet existant',
         size: 'octets',
         chooseFile: 'Sélectionnez un fichier zip',
         userEmail: 'Courriel utilisateur : ',
+        deletelist: 'Sélectionnez les répertoires à supprimer ',
+        publishlist: 'Sélectionnez le répertoire à publier ',
         messType: 'Type du message : ',
         messSev: 'Sévéritée du message : ',
         messTypeAll: 'Tous',
@@ -86,11 +100,26 @@ bindHTML(document.getElementById('avFMEPass'), translations[lang].fmePass);
 bindHTML(document.getElementById('avTokenUser'), translations[lang].fmeUserPH, 'placeholder');
 bindHTML(document.getElementById('avTokenPass'), translations[lang].fmePassPH, 'placeholder');
 bindHTML(document.getElementById('avFMELogin'), translations[lang].fmeLogin, 'value');
+bindHTML(document.getElementById('avRegister'), translations[lang].register);
 bindHTML(document.getElementsByClassName('av-error-connect')[0], translations[lang].fmeErrorConn);
+
+// set functions interface
+bindHTML(document.getElementById('avUpload'), translations[lang].upload, 'value');
+bindHTML(document.getElementById('avDelete'), translations[lang].delete, 'value');
+bindHTML(document.getElementById('avPublish'), translations[lang].publish, 'value');
 
 // set upload interface
 bindHTML(document.getElementById('avUploaded'), translations[lang].uploaded);
-bindHTML(document.getElementById('runWorkSpace'), translations[lang].run, 'value');
+bindHTML(document.getElementById('avRunUpload'), translations[lang].runupload, 'value');
+bindHTML(document.getElementById('avUpdateLabel'), translations[lang].update);
+
+// set delete interface
+bindHTML(document.getElementById('avDeleteList'), translations[lang].deletelist);
+bindHTML(document.getElementById('avRunDelete'), translations[lang].delete, 'value');
+
+// set publish interface
+bindHTML(document.getElementById('avPublisList'), translations[lang].publishlist);
+bindHTML(document.getElementById('avRunPublish'), translations[lang].publish, 'value');
 
 // set report interface (contains message and select dropdown)
 bindHTML(document.getElementById('avMessTypeLbl'), translations[lang].messType);
@@ -139,10 +168,30 @@ $(document).ready(function() {
     serverUrl = 'http://xxx.xxx.xxx.xxx';
 
     // Login page - On click event on submit button
-    $('#avFMELogin').click(function() { getToken(); });
+    $('#avFMELogin').click(function() {
+        // FIXME
+        $('.av-function-section').show();
+        $('.av-login-section').hide();
+
+        getToken();
+    });
+
+    // functions selection
+    $('#avUpload').click(function() {
+        $('.av-function-section').hide();
+        $('.av-upload-section').show();
+    });
+    $('#avDelete').click(function() {
+        $('.av-function-section').hide();
+        $('.av-delete-section').show();
+    });
+    $('#avPublish').click(function() {
+        $('.av-function-section').hide();
+        $('.av-publish-section').show();
+    });
 
     // run workspace button
-    $('#runWorkSpace').click(function(event) {
+    $('#avRunUpload').click(function(event) {
         event.preventDefault();
 
         // Remove message when changing section
@@ -253,7 +302,7 @@ function processFiles(json) {
                 list.append('<p>' + file.name + ' | <em>' + file.size + ' ' +  translations[lang].size + '</em></p>');
             }
         }
-        $('#runWorkSpace').prop('disabled',false);
+        $('#avRunUpload').prop('disabled',false);
     }
 }
 
