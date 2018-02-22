@@ -17,18 +17,7 @@
         <input id="avTokenPass" type="password" name="password" placeholder="Enter Password" required></input>
         <br>
         <input id="avFMELogin" class="av-button" type="button"></input>
-        <div class="av-register">
-            <span id="avRegister"></span>
-            <a href="mailto:nrcan.ddrsupport.rncan@canada.ca?Subject=DDR%20Subscription/Inscription">nrcan.ddrsupport.rncan@canada.ca</a>
-        </div>
         <p class="av-error-connect hidden"></p>
-    </div>
-
-    <!--  functions -->
-    <div class="av-function-section hidden">
-        <input id="avUpload" class="av-button" type="button"></input>
-        <input id="avDelete" class="av-button" type="button"></input>
-        <input id="avPublish" class="av-button" type="button"></input>
     </div>
 
     <!-- package upload -->
@@ -36,25 +25,11 @@
         <div id="fme_params">
             <label id="avUploaded"></label>
             <div class="av-file-list"></div>
-            <hr>
+            <hr />
             <form id="options" class="form-group"></form>
         </div>
-        <hr>
-        <input id="avUpdate" type="checkbox"></input>
-        <label id="avUpdateLabel" for="avUpdate"></label>
-        <input id="avRunUpload" class="av-button block" type="button" disabled></button>
-    </div>
-
-    <!-- package delete -->
-    <div class="av-delete-section hidden">
-        <span id="avDeleteList"></span>
-        <input id="avRunDelete" class="av-button block" type="button" disabled></button>
-    </div>
-
-    <!-- package publish -->
-    <div class="av-publish-section hidden">
-        <span id="avPublisList"></span>
-        <input id="avRunPublish" class="av-button block" type="button" disabled></button>
+        <hr />
+        <input id="runWorkSpace" class="av-button" type="button" disabled></button>
     </div>
 
     <!-- progress -->
@@ -79,7 +54,7 @@
             <label id="avMessSevLbl" for="avMessageSev"></label>
             <select id="avMessageSev" onchange="filterMessSev()"></select>
         </div>
-        <hr>
+        <hr />
         <div class="panel">
             <h4 id="avJobId"></h4>
         </div>
