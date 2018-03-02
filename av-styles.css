@@ -28490,6 +28490,23 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
   color: #e74c3c;
 }
 
+.fgpa .av-accordion-custom div {
+  border-bottom: 1px solid #B6B6B6;
+  border-left: 1px solid #B6B6B6;
+  border-right: 1px solid #B6B6B6;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.fgpa .av-accordion-custom legend {
+  color: #727272;
+  font-style: italic;
+}
+
+.fgpa .av-legend-link {
+  margin-bottom: 20px;
+}
+
 .fgpa .av-loading-screen {
   overflow-x: hidden;
   position: absolute;
