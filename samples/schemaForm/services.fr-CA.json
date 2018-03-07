@@ -69,12 +69,11 @@
               "LAT/LNG"
             ]
           },
-          "minItems": 1,
           "uniqueItems": true,
           "description": "Désactiver des types de recherche spécifiques (SNRC, code postal/RTA ou LAT/LNG)",
           "title": "Type de recherche à désactiver",
           "help": "",
-          "default": ["NTS"]
+          "default": []
         },
         "serviceUrls": {
           "type": "object",
