@@ -67,10 +67,8 @@ function formService($timeout, $rootScope, events, $mdDialog, $translate, common
         // manage the show advance configuration (add 'htmlClass': 'av-form-advance hidden' to fields who need advance config)
         const elems = document.getElementsByClassName('av-form-advance');
 
-        let func = (service.advanceModel) ? 'remove' : 'add';
-        for (let elem of elems) {
-            elem.classList[func]('hidden');
-        }
+        const func = (service.advanceModel) ? 'removeClass' : 'addClass';
+        $(elems)[func]('hidden');
     }
 
     /**
@@ -125,20 +123,12 @@ function formService($timeout, $rootScope, events, $mdDialog, $translate, common
 
         if (collapse) {
             $(targetParent.getElementsByClassName('av-accordion-content')).slideUp(400, 'swing');
-            for (let elem of iconsExp) {
-                elem.classList.remove('hidden');
-            }
-            for (let elem of iconsCol) {
-                elem.classList.add('hidden');
-            }
+            $(iconsExp).removeClass('hidden');
+            $(iconsCol).addClass('hidden');
         } else {
             $(targetParent.getElementsByClassName('av-accordion-content')).slideDown(400, 'swing');
-            for (let elem of iconsExp) {
-                elem.classList.add('hidden');
-            }
-            for (let elem of iconsCol) {
-                elem.classList.remove('hidden');
-            }
+            $(iconsExp).addClass('hidden');
+            $(iconsCol).removeClass('hidden');
         }
     }
 
