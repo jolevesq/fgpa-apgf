@@ -27639,11 +27639,6 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
 
 .fgpa .av-accordion-content-help {
   margin-bottom: 50px;
-  font-size: 15px;
-}
-
-.fgpa .av-accordion-content-help blockquote {
-  font-size: 15px;
 }
 
 .fgpa .av-tools {
@@ -28432,17 +28427,6 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
   border-bottom: none;
 }
 
-.fgpa .av-help-summary .av-help-list p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.fgpa .av-help-summary .av-help-list h5 {
-  font-size: 18px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
 .fgpa .av-help-summary .av-help-list table {
   margin-bottom: 15px;
 }
@@ -28450,11 +28434,6 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
 .fgpa .av-help-summary .av-help-list td,
 .fgpa .av-help-summary .av-help-list th {
   padding: 0 5px;
-}
-
-.fgpa .av-help-summary .av-help-list blockquote {
-  padding: 2px 15px;
-  border-left: 5px solid #607D8B;
 }
 
 .fgpa .av-help-summary .av-content,

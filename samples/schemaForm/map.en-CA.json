@@ -213,7 +213,7 @@
                 "title": "Level of Detail sets"
               },
               "description": "The levels of detail (zoom scales) available for the map",
-              "title": "Levels of detail sets",
+              "title": "Level of detail sets",
               "minItems": 1
         },
         "tileSchemas": {
