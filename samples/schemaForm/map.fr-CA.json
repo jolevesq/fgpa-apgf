@@ -288,7 +288,7 @@
                     "properties": {
                         "enabled": {
                             "type": "boolean",
-                            "title": "Enabled",
+                            "title": "Activée",
                             "default": true
                         },
                         "spatialReference": {
@@ -812,7 +812,7 @@
                                                     "type": "boolean",
                                                     "default": false,
                                                     "description": "Détermine si le filtre peut être modifié. Vrai: la valeur du filtre ne peut être modifiée; Faux: la valeur du filtre peut être modifiée.",
-                                                    "title": "Est statique ?"
+                                                    "title": "Est statique"
                                                 }
                                             },
                                             "required": ["type"],
