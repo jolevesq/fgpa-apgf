@@ -68,7 +68,7 @@ file name but renamed file name is Test(1)).
 # Map - Extents and Levels of Detail
 
 This section is used to define the tile schemas for your viewer application. For each tile schema, a spatial reference
-systems must be defined in the _Spatial Extents Sets_ section. Again, for each tile schema, levels of detail (LODs) must
+system must be defined in the _Spatial Extents Sets_ section. Again, for each tile schema, levels of detail (LODs) must
 be defined in the _Levels of Detail Sets_ section. For this, an ESRI tile cache layer must be used to retrieve the list of LODs from.
 Each LOD corresponds to a map at a given scale or resolution. Therefore each basemap linked to a tile schema must share the same
 spatial extent and LODs.
@@ -309,8 +309,8 @@ The language section allows you to select the appropriate language for the confi
 The Summary Panel allows you to verify that your configuration file respects the FGPV schema. You can validate your configuration
 file by clicking the Validate button ![](validate.png "Validate button").
 
-After a validation is executed, green check marks ![](greencheckbox.png "Green check symbol") will appear besides configuration
-fields that pass validation and red exclamation mark ![](redcircle.png "Red exclamation symbol") will appear besides configuration
+After a validation is executed, green check marks ![](greencheckbox.png "Green check symbol") will appear beside configuration
+fields that pass validation and red exclamation mark ![](redcircle.png "Red exclamation symbol") will appear beside configuration
 fields that do not pass validation. To view a specific input field in the FGPA application, click on the desired field listed in
 the validation summary tree; you will be automatically redirected to the appropriate tab or input field in the FGPA application.
 + Blue coloured items indicate items contained in groups such as Tile Schema, Spatial Extents Sets, Level of Detail sets, Basemaps and Layers groups.

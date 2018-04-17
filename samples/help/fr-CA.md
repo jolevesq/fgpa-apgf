@@ -1,14 +1,14 @@
 # Information générale
 
 L'outil APGF (Auteur de la Plateforme géospatiale fédérale) est utilisé pour créer, mettre à jour, valider et prévisualiser
-les fichiers de configuration utilisé par la visualiseur de la Plateforme géospatiale fédérale (VPGF).
+les fichiers de configuration utilisés par la visualiseur de la Plateforme géospatiale fédérale (VPGF).
 
 L'outil APGF est basé sur la bibliothèque [Angular Schema Form](https://github.com/json-schema-form/angular-schema-form).
-Cette bibliothèque permet de génèrer des formulaires à partir de schémas en format JSON en utilisant AngularJS. L'outil APGF
+Cette bibliothèque permet de générer des formulaires à partir de schémas en format JSON en utilisant AngularJS. L'outil APGF
 utilise le même schéma que le VPGF et permet à l'utilisateur de modifier facilement les valeurs afin de créer de nouveaux
 fichiers de configuration. Le schéma est composé de 5 sections:
 + ** Carte **
-    + La carte est divisée en 5 sections (Étendues et niveaux de détail, Cartes de base, Couches, Légende et Composantess)
+    + La carte est divisée en 5 sections (Étendues et niveaux de détail, Cartes de base, Couches, Légende et Composantes)
 + ** UI **
     + L'interface utilisateur est divisée en 4 sections (Général, Barre d'application, Navigation et Menu latéral)
 + ** Services **
@@ -26,11 +26,11 @@ Pour changer la langue de l'interface, utilisez le menu déroulant _Langue_ situ
 A tout moment, si disponible, vous pouvez utiliser les boutons Ouvrir ou Fermer ![](expandcollapseFR.png "Développer et réduire les boutons")
 pour développer ou réduire tous les éléments d'une section.
 
-Certains éléments de configuration sont utiles seulement pour des utilisateurs plus avancé. Vous pouvez afficher / masquer ces éléments
+Certains éléments de configuration sont utiles seulement pour des utilisateurs plus avancés. Vous pouvez afficher / masquer ces éléments
 en utilisant la case à cocher _Affichier les options de configuration avancée_ situé sous chaque nom de section.
 
 Certains éléments comme les cartes de base, les couches et les champs des tables de couche peuvent être réordonnés. Vous pouvez
-facilement identifier les éléments réordonnable avec le symbol de poignée ![](draghandle.png "Symbol de poignée"). Pour réordonner
+facilement identifier les éléments réordonnable avec le symbole de poignée ![](draghandle.png "Symbol de poignée"). Pour réordonner
 un élément, cliquez sur la poignée, puis faites glisser l'élément vers le position désirée. Une boîte jaune apparaîtra sous
 l'élément où il sera placé lorsque vous relâchez la poignée.
 
@@ -86,7 +86,7 @@ une échelle ou une résolution donnée. Par conséquent, chaque carte de base d
 # Carte - Cartes de base
 
 Cette section est utilisée pour ajouter des cartes de base à votre application de visualisation. Pour ajouter une carte de base,
-un schéma de tuile approprié pour cette carte de basae doit déjà avoir été créé. Une fois qu'une carte de base est ajoutée,
+un schéma de tuile approprié pour cette carte de base doit déjà avoir été créé. Une fois qu'une carte de base est ajoutée,
 les informations suivantes doivent être fournies:
 + Nom _- il sera utilisé pour générer l'identifiant de la carte de base -_
 + Description
@@ -94,7 +94,7 @@ les informations suivantes doivent être fournies:
 + Identifiant du schéma de tuile (sélectionné un schéma de tuile existant)
 + Au moins une couche avec identifiant, type de couche et URL.
 
-Vous devez définir la carte de base initiale qui apparaîtra au lancement du visualisateur. Pour ce faire, sélectionnez l'identifiant
+Vous devez définir la carte de base initiale qui apparaîtra au lancement du visualiseur. Pour ce faire, sélectionnez l'identifiant
 de carte de base (nom-_clé unique_ à partir de _ID de la carte de base initiale_) dans le menu déroulant.
 
 > Pour plus d'informations sur la configuration de la section _Cartes de base_, consultez le menu déroulant d'aide situé
@@ -181,8 +181,8 @@ une nouvelle couche puis supprimez l'ancienne.
 
 # Carte - Légende
 
-Cette section est utilisée pour définir la légende de votre application de visualisation. Il y a 2 types de légendes à disponible:
-"Autopopulate" et "Structured". La légende "Autopopulate" lit les couches telles qu'elles apparaissent dans la section Cosuches
+Cette section est utilisée pour définir la légende de votre application de visualisation. Il y a 2 types de légendes disponibles:
+"Autopopulate" et "Structured". La légende "Autopopulate" lit les couches telles qu'elles apparaissent dans la section Couches
 afin de créer une légende par défaut. La légende "Structured" vous permet de personnaliser l'ordre d'affichage des couches,
 le regroupement des couches, les descriptions et de nombreux autres paramètres.
 
@@ -209,7 +209,7 @@ Cette section est utilisée pour définir les composantes de la carte:
 
 La section Général permet de personnaliser les informations suivantes:
 + Plein écran - Utilisé pour définir la taille initiale de l'application de visualisation.
-+ Lors de la défaillance du visualisateur
++ Lors de la défaillance du visualiseur
     + Message d'échec - Message personnalisé à utiliser à la place du message d'échec par défaut.
     + ULR image d'échec - Image personnalisée à utiliser à la place de l'image d'échec par défaut.
 + Légende
@@ -306,7 +306,7 @@ chargé de l'application APGF que vous utilisez et / ou [soumettez un problème]
 ##### Liens pour les services
 
 La section Liens pour les services répertorie toutes les URL des services requises par l'application de visualisation.
-Ces URL sont des valeurs en lecture seule et par conséquent ne peuvent pas être modifié. Si vous rencontrez un problème avec
+Ces URL sont des valeurs en lecture seule et par conséquent ne peuvent pas être modifiées. Si vous rencontrez un problème avec
 ces services, contactez le responsable de l'application VPGF que vous utilisez.
 
 
@@ -340,7 +340,7 @@ si la case _Afficher les options de configuration avancée_ n'est pas cochée.
 Une fois que tous les champs du fichier de configuration sont validés, le bouton Aperçu ![](Preview.png "Bouton Aperçu") sera activé.
 Vous pourrez ensuite cliquer sur ce bouton pour prévisualiser votre fichier de configuration dans une instance de l'application VPGF. Cette
 instance de prévisualisation affiche toutes les couches, cartes de base, menus et options comme ils apparaîtraient dans l'application VPGF.
-Notez que toute aide personnalisée et "À propos del a carte" de type fichier ne peuvent pas être affichées dans l'instance de prévisualisation.
+Notez que toute aide personnalisée et "À propos de la carte" de type fichier ne peuvent pas être affichées dans l'instance de prévisualisation.
 
 L'instance de prévisualisation peut nécessiter quelques secondes pour s'initialiser selon:
 + Emplacement du réseau
@@ -350,7 +350,7 @@ L'instance de prévisualisation peut nécessiter quelques secondes pour s'initia
 ![](previewsampleFR.png "Aperçu de la visionneuse")
 
 Le panneau sommaire peut afficher d'autres boutons (fonctions) à côté du bouton Aperçu. Ces fonctions optionnelles sont des extensions
-à l'application APGF et pourrait ne pas être disponible pour tous les utilisateurs.
+à l'application APGF et pourraient ne pas être disponibles pour tous les utilisateurs.
 
 Vous trouverez les informations suivantes sur la version de l'application APGF au bas du panneau sommaire:
 + Version / numéro de gabarit

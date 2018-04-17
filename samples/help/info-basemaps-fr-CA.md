@@ -9,7 +9,7 @@ carte de base, procédez comme suit:
     * Le nom sera utilisé pour générer l'identifiant unique de la carte de fond.
 3. Liez votre carte de base avec un _Schéma de tuile_.
 4. Ajoutez au moins une couche pour cette carte de base
-    * Entrez un Url. L'identifiant unique etle type de couche (généralement esriFeature) sont entrés automatiquement.
+    * Entrez un Url. L'identifiant unique et le type de couche (généralement esriFeature) sont entrés automatiquement.
 
 Vous pouvez réorganiser les cartes de base à votre convenance, mais gardez à l'esprit que les cartes de base ne sont
 réorganisables que dans leur propre groupe de schéma de tuiles. Donc, même si l'interface vous permet de les mélanger,
