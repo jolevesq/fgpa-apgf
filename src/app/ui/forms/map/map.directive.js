@@ -528,6 +528,28 @@ function Controller($scope, $translate, $timeout,
         }
     }
 
+    function validateLayerUrl(url, form) {
+        // get the element for dynamic and feature layer
+        const currTarget  = $(document.activeElement);
+        const elementDyn = currTarget.closest('.av-layer')[0];
+        const elementFeat = currTarget.closest('.av-layerEntry')[0];
+
+        // get the index of current layer to get the model and the layerEntry index to get the feature class
+        const indexLayer = elementDyn.getAttribute('sf-index');
+        const featClass = (typeof elementFeat === 'undefined') ?
+            21 : elementFeat.getElementsByClassName('av-feature-index')[0].getElementsByTagName('input')[0].value;
+
+        // get model for specific layer
+        let model = $scope.model.layers[indexLayer];
+
+        // send the model to generate the config to query the layer
+        layerService.getLayer(model, parseInt(featClass)).then(data => {}).catch(err => {
+            // catch the error and reinitialize the fields array
+            console.log(err);
+            self.formService.setErrorMessage(form, 'form.map.layers.url', ['viewValue.length', 'schema.maxLength'])
+        });
+    }
+
     /**
      * Set map form
      *
@@ -722,13 +744,14 @@ function Controller($scope, $translate, $timeout,
                                     self.formService.copyValueToFormIndex(model, item);
                                     self.formService.updateId(model, $scope, 'layers');
                                     self.formService.updateLinkValues($scope, ['layers', 'id'], 'initLayerId', 'avLayersIdUpdate'); }, constants.debInput, false) },
-                                { 'key': 'layers[].url', 'onChange': debounceService.registerDebounce(model => {
+                                { 'key': 'layers[].url', 'onChange': debounceService.registerDebounce((model, form) => {
                                     // check if it is a feature layer. If so, set fields. For dynamic we set when index change
                                     if (!isNaN(parseInt(model.substring(model.lastIndexOf('/') + 1, model.length)))) {
                                         // simulate click event to set fields
                                         const btn = $(document.activeElement).closest('.av-layer').find('.av-form-setfields button')[0];
                                         $timeout(() => { angular.element(btn).triggerHandler('click'); }, 0);
                                     }
+                                    validateLayerUrl(model, form)
                                 }, constants.delayUpdateColumns, false) },
                                 { 'key': 'layers[].metadataUrl', 'htmlClass': 'av-form-advance hidden' },
                                 { 'key': 'layers[].catalogueUrl', 'htmlClass': 'av-form-advance hidden' },
