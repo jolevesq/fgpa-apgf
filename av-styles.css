@@ -28957,6 +28957,10 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
   line-height: 2.5;
 }
 
+.fgpa .col-xs-2 {
+  min-width: 150px;
+}
+
 .fgpa _:-ms-input-placeholder,
 .fgpa .av-drag-handle {
   position: relative;
