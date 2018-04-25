@@ -1054,7 +1054,7 @@
                                       "default": 1,
                                       "minimum": "0",
                                       "maximum": "1",
-                                      "description": "Opacité initiale.",
+                                      "description": "Opacité initiale. La valeur doit être entre 0 et 1.",
                                       "title": "Opacité initiale"
                                     },
                                     "visibility": {
