@@ -15,5 +15,5 @@ setTimeout(function() {
     }
 
     // add button to the interface
-    api.addButton('ddr()', 'ddrlabel', 'ddrtooltip', 'av-ddr-button');
+    api.addButton($(document.getElementsByClassName('av-summary-button')), 'append', 'ddr()', 'ddrlabel', 'ddrtooltip', 'av-ddr-button');
 }, 3000);
