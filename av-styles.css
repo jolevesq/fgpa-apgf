@@ -31760,6 +31760,11 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
   display: none;
 }
 
+.fgpa .av-version-dev {
+  border-left: 2px #00BCD4 solid;
+  padding-left: 10px;
+}
+
 .fgpa .av-loading-screen {
   overflow-x: hidden;
   position: absolute;
