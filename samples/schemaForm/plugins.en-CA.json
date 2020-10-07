@@ -558,6 +558,46 @@
                             "description": {
                                 "type": "string",
                                 "title": "Description for this layer animation"
+                            },
+                            "legend": {
+                                "type": "array",
+                                "title": "Legend",
+                                "description": "Add items for a custom legend, leave it blank for default legend.",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "label": {
+                                            "type": "string",
+                                            "title": "Label"
+                                        },
+                                        "image": {
+                                            "type": "object",
+                                            "properties": {
+                                                "url": {
+                                                    "type": "string",
+                                                    "title": "URL",
+                                                    "default": ""
+                                                },
+                                                "width": {
+                                                    "type": "number",
+                                                    "title": "Width",
+                                                    "minimum": 25,
+                                                    "maximum": 150,
+                                                    "default": 150
+                                                },
+                                                "height": {
+                                                    "type": "number",
+                                                    "title": "Height",
+                                                    "minimum": 25,
+                                                    "maximum": 150,
+                                                    "default": 150
+                                                }
+                                            },
+                                            "required": ["url", "width", "height"]
+                                        }
+                                    },
+                                    "required": ["image"]
+                                }
                             }
                         },
                         "required": ["id", "duration"]
