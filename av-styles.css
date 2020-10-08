@@ -21378,7 +21378,7 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
   .fgpa .av-preview-valid {
     background-color: #d9f3de; }
   .fgpa .av-preview-novalid {
-    background-color: #fae0e0; }
+    background-color: #fae0e0 !important; }
   .fgpa .av-version {
     text-align: center;
     margin: 50.4px 16.8px 16.8px 16.8px; }
