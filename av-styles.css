@@ -21375,6 +21375,10 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
     color: #4d90fe; }
   .fgpa .av-summary-bad {
     color: #e74c3c; }
+  .fgpa .av-preview-detail {
+    overflow: auto; }
+    .fgpa .av-preview-detail span {
+      float: right; }
   .fgpa .av-preview-valid {
     background-color: #d9f3de; }
   .fgpa .av-preview-novalid {
