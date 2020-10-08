@@ -21376,7 +21376,8 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
   .fgpa .av-summary-bad {
     color: #e74c3c; }
   .fgpa .av-preview-detail {
-    overflow: auto; }
+    overflow: auto;
+    max-width: 560px; }
     .fgpa .av-preview-detail span {
       float: right; }
   .fgpa .av-preview-valid {
