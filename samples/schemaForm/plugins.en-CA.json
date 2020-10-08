@@ -519,11 +519,6 @@
                     "title": "Play the animation in loop",
                     "default": false
                 },
-                "description": {
-                    "type": "boolean",
-                    "title": "Enable description control",
-                    "default": true
-                },
                 "slider": {
                     "type": "boolean",
                     "title": "Enable slider control",
@@ -533,6 +528,11 @@
                     "type": "boolean",
                     "title": "Stack layer visibility",
                     "default": false
+                },
+                "legendStack": {
+                    "type": "boolean",
+                    "title": "Stack legend items (useful with the stack option to see all active elements legend)",
+                    "default": true
                 },
                 "layers": {
                     "type": "array",
