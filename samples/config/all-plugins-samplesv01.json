@@ -948,24 +948,26 @@
         "rangeSlider": {
             "enable": false,
             "open": true,
-            "controls": [
-                "lock",
-                "delay"
-            ],
+            "autorun": false,
+            "loop": true,
+            "controls": ["lock", "loop", "delay", "export", "refresh"],
             "params": {
-                "type": "number",
                 "delay": "3000",
                 "rangeType": "dual",
                 "stepType": "dynamic",
-                "precision": "0"
+                "precision": "0",
+                "limit": { "min": 10, "max": 70, "staticItems": [] },
+                "range": { "min": 10, "max": 20 },
+                "type": "number",
+                "units": "Degree",
+                "description": "Latitude of features"
             },
             "layers": [
                 {
                     "id": "32***05003c79",
                     "field": "Latitude"
                 }
-            ],
-            "loop": false
+            ]
         },
         "coordInfo": {
             "enable": false
