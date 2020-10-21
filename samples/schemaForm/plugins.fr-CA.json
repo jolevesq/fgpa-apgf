@@ -63,7 +63,7 @@
                                 "single",
                                 "dual"
                             ],
-                            "description": "Type de d'étendue (simple pour une poignée ou double pour 2 poignées).",
+                            "description": "Type d'étendue (simple pour une poignée ou double pour 2 poignées).",
                             "default": "dual"
                         },
                         "stepType": {
@@ -127,13 +127,13 @@
                                 "min": {
                                     "type": "number",
                                     "title": "Limite min",
-                                    "description": "La valeur minimale pour la limite. Si non défini, le valeur sera trouver à l'aide des valeurs de la couche. Note: Doit être définie pour les couches WMS.",
+                                    "description": "La valeur minimale pour la limite. Si non défini, le valeur sera trouvée à l'aide des valeurs de la couche. Note: Doit être définie pour les couches WMS.",
                                     "default": 0
                                 },
                                 "max": {
                                     "type": "number",
                                     "title": "Limite max",
-                                    "description": "La valeur maximale pour la limite. Si non défini, le valeur sera trouver à l'aide des valeurs de la couche. Note: Doit être définie pour les couches WMS.",
+                                    "description": "La valeur maximale pour la limite. Si non défini, le valeur sera trouvée à l'aide des valeurs de la couche. Note: Doit être définie pour les couches WMS.",
                                     "default": 1
                                 },
                                 "staticItems": {
