@@ -53,7 +53,7 @@
                                 "date",
                                 "wmst"
                             ],
-                            "description": "Si la valeur 'Date' est sélectionné, la valeur de la plage et de la limite est en millisecondes. Note: Date est pour les couche esri et WMS-T est pour les couches ogc WMS-T.",
+                            "description": "Si la valeur 'Date' ou 'WMS-T' est sélectionnée, la valeur de la plage et de la limite est en millisecondes. Note: Date est pour les couche esri et WMS-T est pour les couches ogc WMS-T.",
                             "default": "number"
                         },
                         "rangeType": {

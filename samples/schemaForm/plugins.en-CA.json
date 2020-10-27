@@ -53,7 +53,7 @@
                                 "date",
                                 "wmst"
                             ],
-                            "description": "If date is selected, range and limit must be in milliseconds. Note: Date is for esri layer and WMS-T is for ogc WMS-T layer.",
+                            "description": "If the Date or WMS-T is selected, range and limit must be in milliseconds. Note: Date is for esri layer and WMS-T is for ogc WMS-T layer.",
                             "default": "number"
                         },
                         "rangeType": {
