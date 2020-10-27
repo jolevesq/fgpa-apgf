@@ -21545,9 +21545,12 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
     .fgpa .av-fields-buttons div {
       margin-right: 15px; }
   .fgpa .av-range-date-container {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .fgpa .av-range-date-container .av-range-date-holder {
       margin: 15px; }
+    .fgpa .av-range-date-container .av-set-range-date {
+      height: 25px; }
   .fgpa .av-loading-screen {
     overflow-x: hidden;
     position: absolute;
@@ -21696,6 +21699,9 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
     line-height: 2.5; }
   .fgpa .col-xs-2 {
     min-width: 150px; }
+  .fgpa .ui-datepicker {
+    background-color: #FFFFFF;
+    border: #607D8B 1px solid; }
   .fgpa _:-ms-input-placeholder, .fgpa .av-drag-handle {
     position: relative;
     top: 22px; }
@@ -21709,4 +21715,8 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
     .fgpa .av-drag-handle {
       position: relative;
       top: 22px; } }
+
+.ui-datepicker {
+  background-color: #FFFFFF;
+  border: #607D8B 1px solid; }
 
