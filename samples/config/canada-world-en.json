@@ -384,6 +384,28 @@
                 }
             },
             {
+                "id":"2a30f9b6",
+                "name":"Shaded relief",
+                "description":"This Canadian base map provides geographic context using shaded relief. From Natural Resources Canada.",
+                "altText":"Shaded relief",
+                "layers":[
+                    {
+                        "id":"CBME_CBCE_HS_RO_3978",
+                        "layerType":"esriFeature",
+                        "url":"https://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBME_CBCE_HS_RO_3978/MapServer"
+                    }
+                ],
+                "tileSchemaId":"cad53536",
+                "attribution": {
+                    "text": {
+                        "enabled": true}
+                    ,
+                    "logo": {
+                        "enabled":false
+                    }
+                }
+            },
+            {
                 "id": "18e13bfd",
                 "name": "Transport with labels",
                 "description": "This worldwide basemap provides geographic context with bilingual labels and an emphasis on transportation networks. From Natural Resources Canada.",
@@ -583,11 +605,7 @@
                     "export",
                     "share",
                     "touch",
-                    "help",
-                    "about"
-                ],
-                [
-                    "language"
+                    "help"
                 ],
                 [
                     "plugins"
