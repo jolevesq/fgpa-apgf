@@ -392,7 +392,8 @@
                     {
                         "id":"CBME_CBCE_HS_RO_3978",
                         "layerType":"esriFeature",
-                        "url":"https://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBME_CBCE_HS_RO_3978/MapServer"
+                        "url":"https://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBME_CBCE_HS_RO_3978/MapServer",
+                        "opacity": 1
                     }
                 ],
                 "tileSchemaId":"cad53536",
