@@ -20857,6 +20857,8 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
     margin: 10px; }
   .fgpa body {
     margin: 15px; }
+  .fgpa .av-inner-tab a {
+    max-width: 200px; }
   .fgpa md-icon.av-good {
     fill: #266A2E; }
   .fgpa md-icon.av-alert {
