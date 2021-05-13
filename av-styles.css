@@ -21478,6 +21478,8 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
   .fgpa .av-extentions-container {
     padding: 50px;
     display: inline-grid; }
+  .fgpa .av-none {
+    display: none; }
   .fgpa .av-main-tab {
     margin: 0 10px 0 10px; }
   .fgpa .av-main-form {
@@ -21552,6 +21554,13 @@ The fix is based on the following hack: https://codepen.io/mkstix6/pen/pRbErK
     .fgpa .av-range-date-container .av-range-date-holder {
       margin: 15px; }
     .fgpa .av-range-date-container .av-set-range-date {
+      height: 25px; }
+  .fgpa .av-range-duration-container {
+    display: flex;
+    align-items: center; }
+    .fgpa .av-range-duration-container .av-range-duration-holder {
+      margin: 15px; }
+    .fgpa .av-range-duration-container .av-set-range-duration {
       height: 25px; }
   .fgpa .av-loading-screen {
     overflow-x: hidden;
