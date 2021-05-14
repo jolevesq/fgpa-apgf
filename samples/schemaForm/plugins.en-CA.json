@@ -193,7 +193,7 @@
                             "id": {
                                 "type": "string",
                                 "description": "The id of the layer for referencing within the viewer (does not relate directly to any external service).",
-                                "title": "ID",
+                                "title": "Layer id",
                                 "default": ""
                             },
                             "field": {
@@ -623,7 +623,7 @@
                             "id": {
                                 "type": "string",
                                 "description": "The id of the layer for referencing within the viewer (does not relate directly to any external service).",
-                                "title": "ID"
+                                "title": "Layer id"
                             }
                         },
                         "required": ["id"]
@@ -705,7 +705,7 @@
                             "id": {
                                 "type": "string",
                                 "description": "The id of the layer for referencing within the viewer (does not relate directly to any external service).",
-                                "title": "ID"
+                                "title": "Layer id"
                             },
                             "duration": {
                                 "type": "number",

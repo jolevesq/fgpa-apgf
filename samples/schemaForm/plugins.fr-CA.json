@@ -193,7 +193,7 @@
                             "id": {
                                 "type": "string",
                                 "description": "L'identifiant de la couche pour le référencement dans le visualiseur (ne concerne pas directement un service externe).",
-                                "title": "ID"
+                                "title": "Identifiant de la couche"
                             },
                             "field": {
                                 "type": "string",
@@ -454,13 +454,13 @@
                                     "inline",
                                     "link"
                                 ],
-                                "description": "Type de données (interne pour les éléments à l'intérieur de la couche ou lié pour les éléments à l'intérieur d'une table de liens).",
+                                "description": "Type de données (interne pour les éléments à l'intérieur de la couche ou lié pour les éléments à l'intérieur d'une table liée).",
                                 "default": "inline"
                             },
                             "linkUrl": {
                                 "type": "string",
-                                "title": "URL table de liens",
-                                "description": "URL de la table de liens."
+                                "title": "URL table liée",
+                                "description": "URL de la table liée."
                             },
                             "linkField": {
                                 "type": "string",
@@ -489,18 +489,18 @@
                                                 "single",
                                                 "multi"
                                             ],
-                                            "description": "La structure des données à l'intérieur de la table de liens (unique pour un champ pour la valeur et un pour la date OU multi s'il y a plusieurs ensembles de données dans un champ et que le graphique doit analyser).",
+                                            "description": "La structure des données à l'intérieur de la table liée (unique pour un champ pour la valeur et un pour la date OU multi s'il y a plusieurs ensembles de données dans un champ et que le graphique doit analyser).",
                                             "default": "single"
                                         },
                                         "link": {
-                                            "title": "Champ Lien",
+                                            "title": "Champ lié",
                                             "type": "string",
-                                            "description": "Champs lien entre la table et la couche."
+                                            "description": "Champ lié entre la table et la couche."
                                         },
                                         "date": {
                                             "title": "Champ date",
                                             "type": "string",
-                                            "description": "Champs à utiliser pour la date."
+                                            "description": "Champ à utiliser pour la date."
                                         },
                                         "measure": {
                                             "title": "Champ de mesure",
@@ -509,7 +509,7 @@
                                         "values": {
                                             "title": "Valeurs étiquettes",
                                             "type": "string",
-                                            "description": "Nom du champs pour obtenir les étiquettes dans un type de lien multi."
+                                            "description": "Nom du champs pour obtenir les étiquettes dans un type de lien multiple."
                                         },
                                         "label": {
                                             "type": "object",
@@ -608,7 +608,7 @@
                 "keyboardOffset": {
                     "type": "number",
                     "title": "Déplacement clavier",
-                    "description": "Valeur en pixel du déplacement du glisseur.",
+                    "description": "Valeur en pixel du déplacement du de l'outil de balayage.",
                     "default": 10,
                     "minimum": 1,
                     "maximum": 100
@@ -622,7 +622,7 @@
                             "id": {
                                 "type": "string",
                                 "description": "L'identifiant de la couche pour le référencement dans le visualiseur (ne concerne pas directement un service externe).",
-                                "title": "ID"
+                                "title": "Identifiant de la couche"
                             }
                         },
                         "required": ["id"]
@@ -703,7 +703,7 @@
                             "id": {
                                 "type": "string",
                                 "description": "L'identifiant de la couche pour le référencement dans le visualiseur (ne concerne pas directement un service externe).",
-                                "title": "ID"
+                                "title": "Identifiant de la couche"
                             },
                             "duration": {
                                 "type": "number",
