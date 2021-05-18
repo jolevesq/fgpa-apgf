@@ -115,9 +115,9 @@
                         },
                         "rangeInterval": {
                             "type": "number",
-                            "title": "Interval (in milliseconds for date type)",
+                            "title": "Interval (in milliseconds for date data type)",
                             "default": -1,
-                            "description": "When the limit type is dynamic, this option allows you to define a preset interval between the two handles. The value must be in milliseconds (date type). To convert a time interval into milliseconds, use the built-in converter. Will start at the beginning of the scroll bar, unless the \"Start at end\" option is enabled."
+                            "description": "When the limit type is dynamic, this option allows you to define a preset interval between the two handles. The value must be in milliseconds date data type. For other numerical value formats, enter the desired value directly. To convert a time interval into milliseconds, use the built-in converter. Will start at the beginning of the scroll bar, unless the \"Start at end\" option is enabled."
                         },
                         "startRangeEnd": {
                             "type": "boolean",
@@ -130,14 +130,14 @@
                             "properties": {
                                 "min": {
                                     "type": "number",
-                                    "title": "Minimum value of the range (in milliseconds for date type)",
-                                    "description": "The minimum value of the range that corresponds to the position of the left handle. If not defined, the minimum limit will be used. To convert a date to milliseconds, use the site's built-in converter.",
+                                    "title": "Minimum value of the range (in milliseconds for date data type)",
+                                    "description": "The minimum value of the range that corresponds to the position of the left handle. If not defined, the minimum limit will be used. The value must be in milliseconds date data type. For other numerical value formats, enter the desired value directly. To convert a date to milliseconds, use the site's built-in converter.",
                                     "default": 0
                                 },
                                 "max": {
                                     "type": "number",
-                                    "title": "Maximum value of the range (in milliseconds for date type)",
-                                    "description": "The maximum value of the range that corresponds to the position of the right handle. If not defined, the maximum limit will be used. To convert a date to milliseconds, use the site's built-in converter.",
+                                    "title": "Maximum value of the range (in milliseconds for date data type)",
+                                    "description": "The maximum value of the range that corresponds to the position of the right handle. If not defined, the maximum limit will be used. The value must be in milliseconds date data type. For other numerical value formats, enter the desired value directly. To convert a date to milliseconds, use the site's built-in converter.",
                                     "default": 1
                                 }
                             }
@@ -166,7 +166,7 @@
                                         "type": "number"
                                     },
                                     "default": [],
-                                    "description": "The values for static limit. Note: Use Minimum Limit and Maximum Limit to set the lower and upper limit."
+                                    "description": "The values for static limit. Note: the minimum and maximum limits are used to define the lower and upper static limits. Enter only the intermediate values here."
                                 }
                             }
                         },

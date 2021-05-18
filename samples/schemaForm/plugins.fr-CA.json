@@ -115,9 +115,9 @@
                         },
                         "rangeInterval": {
                             "type": "number",
-                            "title": "Intervalle (en millisecondes pour le type date)",
+                            "title": "Intervalle (en millisecondes pour les données de type date)",
                             "default": -1,
-                            "description": "Lorsque le type de limite est dynamique, cette option permet de définir un intervalle préétabli entre les deux poignées. La valeur se doit d’être en millisecondes (type date). Pour convertir un intervalle de temps en millisecondes, utilisez le convertisseur intégré au site. Commencera au début de la barre de défilement, sauf si l'option « Démarrer à la fin » est activée."
+                            "description": "Cette option permet de définir un intervalle préétabli entre les deux poignées. La valeur se doit d’être en millisecondes pour les données de type date. Pour les autres formats de valeurs numériques, inscrire directement la valeur souhaitée. Pour convertir un intervalle de temps en millisecondes, utilisez le convertisseur intégré au site. Commencera au début de la barre de défilement, sauf si l'option « Démarrer à la fin » est activée."
                         },
                         "startRangeEnd": {
                             "type": "boolean",
@@ -130,14 +130,14 @@
                             "properties": {
                                 "min": {
                                     "type": "number",
-                                    "title": "Valeur minimale de la plage (en millisecondes pour type date)",
-                                    "description": "La valeur minimale de la plage qui correspond à la position de la poignée de gauche. Si non définie, la limite minimale sera utilisée. Pour convertir une date en millisecondes, utilisez le convertisseur intégré au site.",
+                                    "title": "Valeur minimale de la plage (en millisecondes pour les données de type date)",
+                                    "description": "La valeur minimale de la plage qui correspond à la position de la poignée de gauche. Si non définie, la limite minimale sera utilisée. La valeur se doit d’être en millisecondes pour les données de type date. Pour les autres formats de valeurs numériques, inscrire directement la valeur souhaitée. Pour convertir une date en millisecondes, utilisez le convertisseur intégré au site.",
                                     "default": 0
                                 },
                                 "max": {
                                     "type": "number",
-                                    "title": "Valeur maximale de la plage (en millisecondes pour type date)",
-                                    "description": "La valeur maximale de la plage qui correspond à la position de la poignée de droite. Si non définie, la limite maximale sera utilisée. Pour convertir une date en millisecondes, utilisez le convertisseur intégré au site.",
+                                    "title": "Valeur maximale de la plage (en millisecondes pour les données de type date)",
+                                    "description": "La valeur maximale de la plage qui correspond à la position de la poignée de droite. Si non définie, la limite maximale sera utilisée. La valeur se doit d’être en millisecondes pour les données de type date. Pour les autres formats de valeurs numériques, inscrire directement la valeur souhaitée. Pour convertir une date en millisecondes, utilisez le convertisseur intégré au site.",
                                     "default": 1
                                 }
                             }
@@ -166,7 +166,7 @@
                                         "type": "number"
                                     },
                                     "default": [],
-                                    "description": "Les valeurs de la limite statique. Remarque: Utilisez les limites Limite minimale et Limite maximale pour définir les limites inférieure et supérieure."
+                                    "description": "Les valeurs de la limite statique. Remarque: les limites minimale et maximale sont utilisées pour définir les limites statiques inférieure et supérieure. Inscrire ici que les valeurs intermédiares."
                                 }
                             }
                         },
@@ -374,7 +374,7 @@
                                         "linear",
                                         "date"
                                     ],
-                                    "description": "Récupérer les étiquettes d'un champ ou de la configuration pour un graphique de type bar ou bien par valeurs (date ou linéaire) pour un grpahique de type ligne.",
+                                    "description": "Récupérer les étiquettes d'un champ ou de la configuration pour un graphique de type barre ou bien par valeurs (date ou linéaire) pour un graphique de type ligne.",
                                     "default": "config"
                                 },
                                 "values": {
@@ -410,7 +410,7 @@
                                         "linear",
                                         "date"
                                     ],
-                                    "description": "Récupérer les étiquettes d'un champ ou de la configuration pour un graphique de type bar ou bien par valeurs (date ou linéaire) pour un grpahique de type ligne.",
+                                    "description": "Récupérer les étiquettes d'un champ ou de la configuration pour un graphique de type barre ou bien par valeurs (date ou linéaire) pour un graphique de type ligne.",
                                     "default": "config"
                                 },
                                 "values": {
@@ -608,7 +608,7 @@
                 "keyboardOffset": {
                     "type": "number",
                     "title": "Déplacement clavier",
-                    "description": "Valeur en pixel du déplacement du de l'outil de balayage.",
+                    "description": "Valeur en pixel du déplacement de l'outil de balayage.",
                     "default": 10,
                     "minimum": 1,
                     "maximum": 100
