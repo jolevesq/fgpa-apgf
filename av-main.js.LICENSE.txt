@@ -1,0 +1,161 @@
+/*!
+ * AngularJS Material Design
+ * https://github.com/angular/material
+ * @license MIT
+ * v1.2.2
+ */
+
+/*!
+ * Sizzle CSS Selector Engine v2.3.5
+ * https://sizzlejs.com/
+ *
+ * Copyright JS Foundation and other contributors
+ * Released under the MIT license
+ * https://js.foundation/
+ *
+ * Date: 2020-03-14
+ */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * angular-schema-form
+ * @version 1.0.0-alpha.4
+ * @date Sat, 15 Apr 2017 08:27:27 GMT
+ * @link https://github.com/json-schema-form/angular-schema-form
+ * @license MIT
+ * Copyright (c) 2014-2017 JSON Schema Form
+ */
+
+/*!
+ * angular-translate - v2.18.1 - 2018-05-19
+ * 
+ * Copyright (c) 2018 The angular-translate team, Pascal Precht; Licensed MIT
+ */
+
+/*!
+ * jQuery UI :data 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Datepicker 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Keycode 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Mouse 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Scroll Parent 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Sortable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Widget 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * json-schema-form-core
+ * @version 1.0.0-alpha.4
+ * @date Sat, 15 Apr 2017 08:25:55 GMT
+ * @link https://github.com/json-schema-form/json-schema-form-core
+ * @license MIT
+ * Copyright (c) 2014-2017 JSON Schema Form
+ */
+
+/*!
+* svg.js - A lightweight library for manipulating and animating SVG.
+* @version 2.6.1
+* https://svgdotjs.github.io/
+*
+* @copyright Wout Fierens <wout@mick-wout.com>
+* @license MIT
+*
+* BUILT: Tue Apr 25 2017 11:58:09 GMT+0200 (Mitteleuropäische Sommerzeit)
+*/
+
+/*! Native Promise Only
+    v0.8.1 (c) Kyle Simpson
+    MIT License: http://getify.mit-license.org
+*/
+
+/*! https://mths.be/punycode v1.3.2 by @mathias, modified for URI.js */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/**
+ * @license AngularJS v1.8.2
+ * (c) 2010-2020 Google LLC. http://angularjs.org
+ * License: MIT
+ */
+
+/**
+ * @license MIT
+ */
+
+/**
+ * URI.js
+ *
+ * @fileoverview An RFC 3986 compliant, scheme extendable URI parsing/validating/resolving library for JavaScript.
+ * @author <a href="mailto:gary.court@gmail.com">Gary Court</a>
+ * @version 2.0.0
+ * @see http://github.com/garycourt/uri-js
+ * @license URI.js v2.0.0 (c) 2011 Gary Court. License: http://github.com/garycourt/uri-js
+ */
+
+//! Copyright (c) JS Foundation and other contributors
+
+//! github.com/moment/moment-timezone
+
+//! license : MIT
+
+//! moment-timezone.js
+
+//! version : 0.5.14

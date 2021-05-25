@@ -148,14 +148,14 @@
                             "properties": {
                                 "min": {
                                     "type": "number",
-                                    "title": "Limite minimal",
-                                    "description": "La valeur minimale contenue dans le jeu de données. Si non définie, la valeur sera trouvée à l'aide des valeurs présentent dans le champ utilisé de la couche. Pour convertir une date en millisecondes, utilisez le convertisseur intégré au site.",
+                                    "title": "Limite minimale",
+                                    "description": "La valeur minimale contenue dans le jeu de données. Si non définie, la valeur sera trouvée à l'aide des valeurs présentes dans le champ utilisé de la couche. Pour convertir une date en millisecondes, utilisez le convertisseur intégré au site.",
                                     "default": 0
                                 },
                                 "max": {
                                     "type": "number",
                                     "title": "Limite maximale",
-                                    "description": "La valeur maximale contenue dans le jeu de données. Si non définie, la valeur sera trouvée à l'aide des valeurs présentent dans le champ utilisé de la couche. Pour convertir une date en millisecondes, utilisez le convertisseur intégré au site.",
+                                    "description": "La valeur maximale contenue dans le jeu de données. Si non définie, la valeur sera trouvée à l'aide des valeurs présentes dans le champ utilisé de la couche. Pour convertir une date en millisecondes, utilisez le convertisseur intégré au site.",
                                     "default": 1
                                 },
                                 "staticItems": {
